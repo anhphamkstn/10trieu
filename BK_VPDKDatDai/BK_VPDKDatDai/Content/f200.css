@@ -1,0 +1,120 @@
+﻿.maincontent{   
+    background: #fff none repeat scroll 0 0;
+    padding: 20px 5%;overflow-y: hidden !important;
+    width: 90%;
+}
+
+.left{
+    float: left;
+    padding-right: 3%;
+    width: 32%;
+}
+
+.ldan li.active ul{
+    display: block;
+
+}
+
+.ldan{
+    position: relative;
+
+}
+
+.ldan h2{
+border-bottom: 3px solid #0051b5;
+color: #0051b5;
+display: block;
+font-size: 1.5em;
+font-weight: bold;
+margin-bottom: 5px;
+margin-top: 0;
+padding-bottom: 0;
+text-transform: uppercase;
+}
+
+.ldan h2 a{
+color: #058701;
+font-family: gothic;
+font-size: 20px;
+font-weight: normal;
+}
+
+
+.ldan li{
+    list-style: none;
+
+}
+
+.ldan li a{
+color: #0051b5;
+display: block;
+font-weight: bold;
+line-height: 120%;
+padding: 15px 30px 15px 0;
+text-transform: uppercase;
+}
+
+.ldan li li a{
+    text-transform: none;
+
+}
+.ldan li a:hover{
+    color: #eaa926;
+
+}
+.ldan li ul{
+    display: none;margin-left: 15px;
+
+}
+
+
+.ldan li li a{
+color: #333;
+display: block;
+padding: 15px 40px 15px 0;
+text-align: justify;
+text-transform: none;
+}
+
+.ldan li li li a{
+    color: #555;font-weight: normal;
+
+}
+
+.ldan li li a:hover,.ldan li li a.active {
+  color: #eaa926;
+}
+
+.clear{
+	clear:both;
+}
+
+.center{
+float: left;
+padding-left: 3%;
+width: 61%;padding-right: 1%;
+}
+
+h1.h1ff{
+border-bottom: 3px solid #0051b5;
+color: #0051b5;margin-top: 0;
+font-size: 1.5em;
+font-weight: bold;
+padding-bottom: 0;
+text-transform: uppercase;
+}
+
+.info{
+    width: 100%;overflow: hidden;margin-top: 10px;
+}
+.info img{
+    max-width: 100%;margin: 10px auto;
+   
+}
+.info table{width: 100% !important;	border-collapse: collapse;}
+.info table table{width: auto !important;}
+.info table,.info table th,.info table td {
+    border: 1px solid #ccc;padding: 4px;
+}
+.info li,.descontent li{margin-left: 18px;}
+.info p,.info span, .info a, .info li, .info td, .info div{font-size: 1em !important;}
