@@ -1,0 +1,37 @@
+﻿body {
+}
+
+#header-panel {
+    height:100px;
+    
+    background-size:cover;
+}
+
+#nav-panel{
+    height:55px;
+    background-color:#eee;
+    position:relative;
+    text-align:center;
+}
+
+#content-panel{
+    
+}
+
+#footer-panel{
+    clear:both;
+    height:30px;
+    background-color:#333;
+    position: absolute;
+    bottom:0px;
+    width:100%;
+    color:white;
+}
+.content-item {
+    float:left;
+    margin-left:5%;
+    margin-right:5%;
+    width:23%;
+    margin-top:30px;
+    height:450px;
+}
