@@ -3,11 +3,15 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="content-item">
-        <img src="Images/tracuu2.jpg" style="width:100%; border-radius:50%;"/>
+        <a href="F200_TraCuuThuTuc.aspx">
+            <img src="Images/tracuu2.jpg" style="width:100%; border-radius:50%;"/>
+        </a>
         <p style="text-align:center;color:#0051B5;margin-top: 20px;font-size: 20px;font-weight: bold;">TRA CỨU THỦ TỤC</p>
     </div>
     <div class="content-item">
-        <img src="Images/vanban4.png" style="width:100%; border-radius:50%;"/>
+        <a href="F300_TraCuuHoSo.aspx">
+            <img src="Images/vanban4.png" style="width:100%; border-radius:50%;"/>
+        </a>
         <p style="text-align:center;color:#0051B5;margin-top: 20px;font-size: 20px;font-weight: bold;">TRA CỨU HỒ SƠ</p>
     </div>
     <div class="content-item">

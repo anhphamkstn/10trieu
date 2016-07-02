@@ -1,13 +1,12 @@
 ﻿.maincontent{   
     background: #fff none repeat scroll 0 0;
     padding: 20px 5%;overflow-y: hidden !important;
-    width: 90%;
 }
 
 .left{
     float: left;
     padding-right: 3%;
-    width: 32%;
+    width: 43%;
 }
 
 .ldan li.active ul{
@@ -63,7 +62,8 @@ text-transform: uppercase;
 
 }
 .ldan li ul{
-    display: none;margin-left: 15px;
+    
+    margin-left: 15px;
 
 }
 
@@ -92,7 +92,7 @@ text-transform: none;
 .center{
 float: left;
 padding-left: 3%;
-width: 61%;padding-right: 1%;
+width: 57%;padding-right: 1%;
 }
 
 h1.h1ff{
@@ -118,3 +118,17 @@ text-transform: uppercase;
 }
 .info li,.descontent li{margin-left: 18px;}
 .info p,.info span, .info a, .info li, .info td, .info div{font-size: 1em !important;}
+
+.dxtvControl .dxtv-ndTxt {
+    width:400px;
+    white-space:normal !important;
+    line-height:20px;
+    text-align:justify;
+}
+
+#ContentPlaceHolder1_ASPxTreeView1_CD {
+    width:550px;
+    max-height:500px;
+    overflow-y:scroll;
+    height:500px;
+}

@@ -6,6 +6,7 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using BK_VPDKDatDai;
+using System.Web.Http;
 
 namespace BK_VPDKDatDai
 {
@@ -16,6 +17,11 @@ namespace BK_VPDKDatDai
             // Code that runs on application startup
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterOpenAuth();
+            RouteTable.Routes.MapHttpRoute(
+            name: "DefaultApi",
+            routeTemplate: "api/{controller}/{id}",
+            defaults: new { id = System.Web.Http.RouteParameter.Optional }
+            );
         }
 
         void Application_End(object sender, EventArgs e)

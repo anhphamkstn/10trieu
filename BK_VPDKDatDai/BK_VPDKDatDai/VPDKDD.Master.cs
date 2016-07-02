@@ -11,7 +11,10 @@ namespace BK_VPDKDatDai
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                m_link.Value = "";
+            }
         }
     }
 }

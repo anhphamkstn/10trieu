@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="QUAN_LY_DAT_DAIModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="QUAN_LY_DAT_DAIModelStoreContainer">
+          <EntitySet Name="DM_TIEU_DE" EntityType="QUAN_LY_DAT_DAIModel.Store.DM_TIEU_DE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DM_USER" EntityType="QUAN_LY_DAT_DAIModel.Store.DM_USER" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="DM_TIEU_DE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TIEU_DE" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="ID_CHA" Type="numeric" />
+          <Property Name="NOI_DUNG" Type="ntext" />
+          <Property Name="THU_TU_HIEN_THI" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="DM_USER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="USER_NAME" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PASSWORD" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="GHI_CHU" Type="ntext" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QUAN_LY_DAT_DAIModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="QUAN_LY_DAT_DAIEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="DM_TIEU_DE" EntityType="QUAN_LY_DAT_DAIModel.DM_TIEU_DE" />
+          <EntitySet Name="DM_USER" EntityType="QUAN_LY_DAT_DAIModel.DM_USER" />
+        </EntityContainer>
+        <EntityType Name="DM_TIEU_DE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TIEU_DE" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="ID_CHA" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="NOI_DUNG" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="THU_TU_HIEN_THI" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="DM_USER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="USER_NAME" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="PASSWORD" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="GHI_CHU" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QUAN_LY_DAT_DAIModelStoreContainer" CdmEntityContainer="QUAN_LY_DAT_DAIEntities">
+          <EntitySetMapping Name="DM_TIEU_DE">
+            <EntityTypeMapping TypeName="QUAN_LY_DAT_DAIModel.DM_TIEU_DE">
+              <MappingFragment StoreEntitySet="DM_TIEU_DE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TIEU_DE" ColumnName="TIEU_DE" />
+                <ScalarProperty Name="ID_CHA" ColumnName="ID_CHA" />
+                <ScalarProperty Name="NOI_DUNG" ColumnName="NOI_DUNG" />
+                <ScalarProperty Name="THU_TU_HIEN_THI" ColumnName="THU_TU_HIEN_THI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DM_USER">
+            <EntityTypeMapping TypeName="QUAN_LY_DAT_DAIModel.DM_USER">
+              <MappingFragment StoreEntitySet="DM_USER">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="USER_NAME" ColumnName="USER_NAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="GHI_CHU" ColumnName="GHI_CHU" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -22,14 +22,14 @@
                 <img src="Images/bgnew.jpg" style="height:100px !important; width:100%;" />
             </div>
             <div id="nav-panel">
-                <a>
+                <a id="nav-back" style="cursor:pointer">
                     <img src="Images/nav-back.png" style="height: 80%;border-radius: 10px;margin-top: 5px;left: 70px;position: absolute;"/>
                 </a>
                 
-                <a>
+                <a id="nav-foward" style="cursor:pointer">
                     <img src="Images/nav-foward.png" style="height: 80%;border-radius: 10px;margin-top: 5px;right: 70px;position: absolute;"/>
                 </a>
-                <a>
+                <a href="F100_Home.aspx">
                     <img src="Images/nav-home.png" style="height: 80%;border-radius: 10px;margin-top: 5px;"/>
                 </a>
             </div>
@@ -42,6 +42,18 @@
                 <p style="text-align:center;">Bản quyền thuộc Văn phòng đăng ký đất đai Hà Nội</p>
             </div>
         </div>
+        <asp:HiddenField runat="server" ID="m_link" ClientIDMode="Static"/>
     </form>
+
+    <script>
+        $('#nav-back').click(function () {
+            window.history.back();
+            location.reload();
+        });
+        $('#nav-foward').click(function () {
+            window.history.forward();
+            location.reload();
+        });
+    </script>
 </body>
 </html>
