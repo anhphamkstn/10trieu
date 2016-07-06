@@ -40,6 +40,33 @@ namespace BK_VPDKDatDai {
         protected global::System.Web.UI.WebControls.Button m_cmd_tim_kiem;
         
         /// <summary>
+        /// m_cmd_xoa_trang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button m_cmd_xoa_trang;
+        
+        /// <summary>
+        /// m_lbl_ket_qua control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label m_lbl_ket_qua;
+        
+        /// <summary>
+        /// m_lbl_yeu_cau control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label m_lbl_yeu_cau;
+        
+        /// <summary>
         /// hosohoten control.
         /// </summary>
         /// <remarks>
@@ -85,22 +112,13 @@ namespace BK_VPDKDatDai {
         protected global::System.Web.UI.WebControls.Label hosocmnd;
         
         /// <summary>
-        /// hosodonvicap control.
+        /// hosodkkd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hosodonvicap;
-        
-        /// <summary>
-        /// hosocapngay control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hosocapngay;
+        protected global::System.Web.UI.WebControls.Label hosodkkd;
         
         /// <summary>
         /// hosonoidung control.
@@ -137,6 +155,15 @@ namespace BK_VPDKDatDai {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label hosothoigiannhanhoso;
+        
+        /// <summary>
+        /// hosothoigiantraketqua control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label hosothoigiantraketqua;
         
         /// <summary>
         /// hosocbxl control.
@@ -200,5 +227,14 @@ namespace BK_VPDKDatDai {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox m_chkb_co_giay_chung_nhan;
+        
+        /// <summary>
+        /// m_hdf_thue_yn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField m_hdf_thue_yn;
     }
 }

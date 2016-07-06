@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/VPDKDD.Master" AutoEventWireup="true" CodeBehind="F200_TraCuuThuTuc.aspx.cs" Inherits="BK_VPDKDatDai.F200_TraCuuThuTuc" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/VPDKDD.Master" AutoEventWireup="true" CodeBehind="F400_TraCuuLuat.aspx.cs" Inherits="BK_VPDKDatDai.F400_TraCuuLuat" %>
 
 <%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxTreeView" TagPrefix="dx" %>
 
@@ -8,7 +8,7 @@
     <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
     <script src="Scripts/tree_view/bootstrap-treeview.js"></script>
-    <link href="Content/f200.css" rel="stylesheet" />
+    <link href="Content/f400.css" rel="stylesheet" />
     <link href="Content/bootstrap-treeview.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -44,7 +44,7 @@
 
             <script>
                 function getProducts(v_id) {
-                    $.getJSON("api/tracuu?id="+v_id,
+                    $.getJSON("api/tracuuluat?id="+v_id,
                         function (data) {
                             if (data.NOI_DUNG != null) {
                                 $(".info").empty().append(data.NOI_DUNG);

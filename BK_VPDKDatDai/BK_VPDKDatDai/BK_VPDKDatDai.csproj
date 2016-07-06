@@ -38,11 +38,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v14.1, Version=14.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -224,6 +234,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="F400_TraCuuLuat.aspx" />
     <Content Include="F100_Home.aspx" />
     <Content Include="F200_TraCuuThuTuc.aspx" />
     <Content Include="F300_TraCuuHoSo.aspx" />
@@ -231,6 +242,12 @@
     <Content Include="Images\bgnew.jpg" />
     <Content Include="Images\bullet.png" />
     <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\ICON\Back.png" />
+    <Content Include="Images\ICON\Forward.png" />
+    <Content Include="Images\ICON\Home.png" />
+    <Content Include="Images\ICON\TraCuuHoSo.png" />
+    <Content Include="Images\ICON\TraCuuLuat.png" />
+    <Content Include="Images\ICON\TraCuuThuTuc.png" />
     <Content Include="Images\nav-back.png" />
     <Content Include="Images\nav-foward.png" />
     <Content Include="Images\nav-home.png" />
@@ -247,6 +264,8 @@
     <Content Include="Images\tracuu2.jpg" />
     <Content Include="Images\vanban3.png" />
     <Content Include="Images\vanban4.png" />
+    <Content Include="Images\VPDDHNBanner.png" />
+    <Content Include="Images\VPDKDDHN 160702.png" />
     <Content Include="packages.config" />
     <Content Include="bootstrap-3.3.6-dist\css\bootstrap-theme.css.map" />
     <Content Include="bootstrap-3.3.6-dist\css\bootstrap-theme.min.css.map" />
@@ -256,6 +275,23 @@
     <Content Include="bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <EntityDeploy Include="HOSOVPDKDD.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HOSOVPDKDD.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="HOSOVPDKDD.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HOSOVPDKDD.edmx</DependentUpon>
+      <LastGenOutput>HOSOVPDKDD.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="HOSOVPDKDD.edmx.diagram">
+      <DependentUpon>HOSOVPDKDD.edmx</DependentUpon>
+    </Content>
+    <Content Include="HOSOVPDKDD.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HOSOVPDKDD.edmx</DependentUpon>
+      <LastGenOutput>HOSOVPDKDD.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -288,8 +324,28 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="virtual_keyboard\jquery.virtual_keyboard.css" />
-    <Content Include="virtual_keyboard\jquery.virtual_keyboard.js" />
+    <Content Include="VirtualKeyboard\bootstrap.min.css" />
+    <Content Include="VirtualKeyboard\bootstrap.min.js" />
+    <Content Include="VirtualKeyboard\demo.css" />
+    <Content Include="VirtualKeyboard\demo.js" />
+    <Content Include="VirtualKeyboard\font-awesome.min.css" />
+    <Content Include="VirtualKeyboard\github-btn%281%29.html" />
+    <Content Include="VirtualKeyboard\github-btn.html" />
+    <Content Include="VirtualKeyboard\jquery-latest.min.js" />
+    <Content Include="VirtualKeyboard\jquery-migrate-3.0.0-rc1.min.js" />
+    <Content Include="VirtualKeyboard\jquery-ui.min.css" />
+    <Content Include="VirtualKeyboard\jquery-ui.min.js" />
+    <Content Include="VirtualKeyboard\jquery.keyboard.extension-autocomplete.js" />
+    <Content Include="VirtualKeyboard\jquery.keyboard.extension-caret.js" />
+    <Content Include="VirtualKeyboard\jquery.keyboard.extension-typing.js" />
+    <Content Include="VirtualKeyboard\jquery.keyboard.js" />
+    <Content Include="VirtualKeyboard\jquery.mousewheel.js" />
+    <Content Include="VirtualKeyboard\jquery.tipsy.min.js" />
+    <Content Include="VirtualKeyboard\keyboard.css" />
+    <Content Include="VirtualKeyboard\keyboard.svg" />
+    <Content Include="VirtualKeyboard\prettify.css" />
+    <Content Include="VirtualKeyboard\prettify.js" />
+    <Content Include="VirtualKeyboard\tipsy.css" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="VPDKDD.Master" />
@@ -346,6 +402,16 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DM_LUAT.cs">
+      <DependentUpon>VPDKDD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="F400_TraCuuLuat.aspx.cs">
+      <DependentUpon>F400_TraCuuLuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="F400_TraCuuLuat.aspx.designer.cs">
+      <DependentUpon>F400_TraCuuLuat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -383,6 +449,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HOSOVPDKDD.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HOSOVPDKDD.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HOSOVPDKDD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HOSOVPDKDD.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HOSOVPDKDD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HOSOVPDKDD.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -392,6 +473,7 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="TraCuuController.cs" />
+    <Compile Include="TraCuuLuatController.cs" />
     <Compile Include="VPDKDD.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -413,6 +495,9 @@
     </Compile>
     <Compile Include="VPDKDD.Master.designer.cs">
       <DependentUpon>VPDKDD.Master</DependentUpon>
+    </Compile>
+    <Compile Include="V_HO_SO.cs">
+      <DependentUpon>HOSOVPDKDD.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -440,6 +525,7 @@
       <DependentUpon>VPDKDD.edmx</DependentUpon>
       <LastGenOutput>VPDKDD.cs</LastGenOutput>
     </Content>
+    <Content Include="VirtualKeyboard\keyboard" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

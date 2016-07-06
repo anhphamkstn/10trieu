@@ -15,11 +15,11 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="height:1080px; width:1920px; border:none; font-size:16px;">
     <form id="form1" runat="server">
         <div>
             <div id="header-panel">
-                <img src="Images/bgnew.jpg" style="height:100px !important; width:100%;" />
+                <img src="Images/VPDDHNBanner.png" style="height:200px !important; width:100%;" />
             </div>
             <div id="nav-panel">
                 <a id="nav-back" style="cursor:pointer">
@@ -48,11 +48,11 @@
     <script>
         $('#nav-back').click(function () {
             window.history.back();
-            location.reload();
+            
         });
         $('#nav-foward').click(function () {
             window.history.forward();
-            location.reload();
+            
         });
     </script>
 </body>

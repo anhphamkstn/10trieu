@@ -7,6 +7,7 @@
       <Diagram DiagramId="2e4c8cfc971a4fd38fcb1848424d69bd" Name="Diagram1">
         <EntityTypeShape EntityType="QUAN_LY_DAT_DAIModel.DM_TIEU_DE" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QUAN_LY_DAT_DAIModel.DM_USER" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUAN_LY_DAT_DAIModel.DM_LUAT" Width="1.5" PointX="3.303841577518658" PointY="14.359184882770844" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

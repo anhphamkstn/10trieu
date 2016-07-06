@@ -2,7 +2,7 @@
 }
 
 #header-panel {
-    height:100px;
+    height:200px;
     
     background-size:cover;
 }
@@ -32,11 +32,11 @@
     margin-left:5%;
     margin-right:5%;
     width:23%;
-    margin-top:30px;
+    margin-top:100px;
     height:450px;
 }
 
-#m_cmd_tim_kiem {
+#m_cmd_tim_kiem, #m_cmd_xoa_trang {
     background: #eee none repeat scroll 0 0;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -49,9 +49,40 @@
     margin-top:10px;
 }
 
-m_txt_cmnd,#m_txt_ma_ho_so {
+#m_txt_cmnd,#m_txt_ma_ho_so {
     width: 200px;
     height: 29px;
     margin: 0px;
     margin-right: 8px;
+}
+
+#m_lbl_ket_qua, #m_lbl_yeu_cau {
+    font-weight:bold;
+    text-align:center;
+    color:#fa3306;
+}
+
+span[id^='ContentPlaceHolder1_hoso'] {
+    font-style:italic;
+    font-weight:bold;
+}
+
+#hosoketqua td {
+    height:40px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#m_txt_ma_ho_so_keyboard {
+    top: 509.022px !important;
+    left: 36.73px !important;
+}
+
+#m_txt_cmnd_keyboard {
+    top: 600px !important;
+    left: 338.728px !important;
+}
+
+.hidden {
+    display:none;
 }

@@ -13,10 +13,10 @@ namespace BK_VPDKDatDai
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QUAN_LY_DAT_DAIEntities : DbContext
+    public partial class BK_HSVPDKDDEntities : DbContext
     {
-        public QUAN_LY_DAT_DAIEntities()
-            : base("name=QUAN_LY_DAT_DAIEntities")
+        public BK_HSVPDKDDEntities()
+            : base("name=BK_HSVPDKDDEntities")
         {
         }
     
@@ -25,8 +25,6 @@ namespace BK_VPDKDatDai
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<DM_TIEU_DE> DM_TIEU_DE { get; set; }
-        public DbSet<DM_USER> DM_USER { get; set; }
-        public DbSet<DM_LUAT> DM_LUAT { get; set; }
+        public DbSet<V_HO_SO> V_HO_SO { get; set; }
     }
 }

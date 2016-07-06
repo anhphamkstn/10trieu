@@ -15,7 +15,10 @@
         <p style="text-align:center;color:#0051B5;margin-top: 20px;font-size: 20px;font-weight: bold;">TRA CỨU HỒ SƠ</p>
     </div>
     <div class="content-item">
-        <img src="Images/vanban3.png" style="width:100%; border-radius:50%;"/>
+        <a href="F400_TraCuuLuat.aspx">
+            <img src="Images/vanban3.png" style="width:100%; border-radius:50%;"/>
+        </a>
+        
         <p style="text-align:center;color:#0051B5;margin-top: 20px;font-size: 20px;font-weight: bold;">TRA CỨU THÔNG TIN LUẬT</p>
     </div>
 </asp:Content>

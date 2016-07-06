@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BK_VPDKDDModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="BK_VPDKDDModelStoreContainer">
+          <EntitySet Name="V_HO_SO" EntityType="BK_VPDKDDModel.Store.V_HO_SO" store:Type="Views" store:Schema="dbo" store:Name="V_HO_SO">
+            <DefiningQuery>SELECT 
+      [V_HO_SO].[IDU] AS [IDU], 
+      [V_HO_SO].[ID] AS [ID], 
+      [V_HO_SO].[IDSoTiepNhan] AS [IDSoTiepNhan], 
+      [V_HO_SO].[IDDM_ThuTucHanhChinh] AS [IDDM_ThuTucHanhChinh], 
+      [V_HO_SO].[DM_ThuTucHanhChinh] AS [DM_ThuTucHanhChinh], 
+      [V_HO_SO].[VeViec] AS [VeViec], 
+      [V_HO_SO].[SoBienNhan] AS [SoBienNhan], 
+      [V_HO_SO].[NgayNhan] AS [NgayNhan], 
+      [V_HO_SO].[SoNgayGiaiQuyet] AS [SoNgayGiaiQuyet], 
+      [V_HO_SO].[SoNgayLamThue] AS [SoNgayLamThue], 
+      [V_HO_SO].[NgayHenTraTBT] AS [NgayHenTraTBT], 
+      [V_HO_SO].[NgayHenTra] AS [NgayHenTra], 
+      [V_HO_SO].[IDDM_District] AS [IDDM_District], 
+      [V_HO_SO].[DM_District] AS [DM_District], 
+      [V_HO_SO].[IDDM_Guild] AS [IDDM_Guild], 
+      [V_HO_SO].[DM_Guild] AS [DM_Guild], 
+      [V_HO_SO].[DiaChiChiTiet] AS [DiaChiChiTiet], 
+      [V_HO_SO].[TenNguoiNop] AS [TenNguoiNop], 
+      [V_HO_SO].[CMTNguoiNop] AS [CMTNguoiNop], 
+      [V_HO_SO].[DiaChiNguoiNop] AS [DiaChiNguoiNop], 
+      [V_HO_SO].[DienThoaiNguoiNop] AS [DienThoaiNguoiNop], 
+      [V_HO_SO].[MailNguoiNop] AS [MailNguoiNop], 
+      [V_HO_SO].[GioiTinhNguoiNop] AS [GioiTinhNguoiNop], 
+      [V_HO_SO].[IDChuSoHuu] AS [IDChuSoHuu], 
+      [V_HO_SO].[TenChuSoHuu] AS [TenChuSoHuu], 
+      [V_HO_SO].[CMTChuSoHuu] AS [CMTChuSoHuu], 
+      [V_HO_SO].[DiaChiChuSoHuu] AS [DiaChiChuSoHuu], 
+      [V_HO_SO].[DienThoaiChuSoHuu] AS [DienThoaiChuSoHuu], 
+      [V_HO_SO].[MailChuSoHuu] AS [MailChuSoHuu], 
+      [V_HO_SO].[GioiTinhChuSoHuu] AS [GioiTinhChuSoHuu], 
+      [V_HO_SO].[TenChuBan] AS [TenChuBan], 
+      [V_HO_SO].[CMTChuBan] AS [CMTChuBan], 
+      [V_HO_SO].[DiaChiChuBan] AS [DiaChiChuBan], 
+      [V_HO_SO].[DienThoaiChuBan] AS [DienThoaiChuBan], 
+      [V_HO_SO].[GioiTinhChuBan] AS [GioiTinhChuBan], 
+      [V_HO_SO].[IDChuDauTu] AS [IDChuDauTu], 
+      [V_HO_SO].[TenChuDauTu] AS [TenChuDauTu], 
+      [V_HO_SO].[DiaChiChuDauTu] AS [DiaChiChuDauTu], 
+      [V_HO_SO].[SoDKKDChuDauTu] AS [SoDKKDChuDauTu], 
+      [V_HO_SO].[DienThoaiChuDauTu] AS [DienThoaiChuDauTu], 
+      [V_HO_SO].[TenDuAn] AS [TenDuAn], 
+      [V_HO_SO].[IDDuAn] AS [IDDuAn], 
+      [V_HO_SO].[GhiChu] AS [GhiChu], 
+      [V_HO_SO].[UserName] AS [UserName], 
+      [V_HO_SO].[CanHoSo] AS [CanHoSo], 
+      [V_HO_SO].[IDCanHo] AS [IDCanHo], 
+      [V_HO_SO].[IDNha] AS [IDNha], 
+      [V_HO_SO].[TenChungCu] AS [TenChungCu], 
+      [V_HO_SO].[TangSo] AS [TangSo], 
+      [V_HO_SO].[HoSoChuDauTuNop] AS [HoSoChuDauTuNop], 
+      [V_HO_SO].[IDHoSoChuDauTu] AS [IDHoSoChuDauTu], 
+      [V_HO_SO].[SoLuongHoSoNop] AS [SoLuongHoSoNop], 
+      [V_HO_SO].[SoPhatHanh] AS [SoPhatHanh], 
+      [V_HO_SO].[UserNameNhanHoSo] AS [UserNameNhanHoSo], 
+      [V_HO_SO].[IDTinhTrangHienTai] AS [IDTinhTrangHienTai], 
+      [V_HO_SO].[UserNameHienTai] AS [UserNameHienTai], 
+      [V_HO_SO].[DM_TinhTrang] AS [DM_TinhTrang], 
+      [V_HO_SO].[IDDM_TinhTrang] AS [IDDM_TinhTrang], 
+      [V_HO_SO].[SoPhieuChuyen] AS [SoPhieuChuyen], 
+      [V_HO_SO].[IDDM_ChiNhanh] AS [IDDM_ChiNhanh], 
+      [V_HO_SO].[SoTBT] AS [SoTBT], 
+      [V_HO_SO].[DaTraTBT] AS [DaTraTBT], 
+      [V_HO_SO].[NgayTraTBT] AS [NgayTraTBT], 
+      [V_HO_SO].[NguoiNhanTBT] AS [NguoiNhanTBT], 
+      [V_HO_SO].[SoLuongHoSoTraTBT] AS [SoLuongHoSoTraTBT], 
+      [V_HO_SO].[UserNameTraTBT] AS [UserNameTraTBT], 
+      [V_HO_SO].[SoPhatHanhGCN] AS [SoPhatHanhGCN], 
+      [V_HO_SO].[NgayPhatHanhGCN] AS [NgayPhatHanhGCN], 
+      [V_HO_SO].[MaVach] AS [MaVach], 
+      [V_HO_SO].[SoVaoSoCapGCN] AS [SoVaoSoCapGCN], 
+      [V_HO_SO].[NgayTraGCN] AS [NgayTraGCN], 
+      [V_HO_SO].[DaTraGCN] AS [DaTraGCN], 
+      [V_HO_SO].[NguoiNhanGCN] AS [NguoiNhanGCN], 
+      [V_HO_SO].[SoLuongGCNTra] AS [SoLuongGCNTra], 
+      [V_HO_SO].[UserNameTraGCN] AS [UserNameTraGCN], 
+      [V_HO_SO].[GhiChuTraKetQua] AS [GhiChuTraKetQua], 
+      [V_HO_SO].[NgayTraHoSo] AS [NgayTraHoSo], 
+      [V_HO_SO].[DaTraHoSo] AS [DaTraHoSo], 
+      [V_HO_SO].[NguoiNhanHoSo] AS [NguoiNhanHoSo], 
+      [V_HO_SO].[SoLuongHoSoTra] AS [SoLuongHoSoTra], 
+      [V_HO_SO].[UserNameTraHoSo] AS [UserNameTraHoSo], 
+      [V_HO_SO].[DaNopThue] AS [DaNopThue], 
+      [V_HO_SO].[NgayNhanBienLaiThue] AS [NgayNhanBienLaiThue], 
+      [V_HO_SO].[DaCoTBT] AS [DaCoTBT], 
+      [V_HO_SO].[DaCoGCN] AS [DaCoGCN], 
+      [V_HO_SO].[IDDM_PhongBan] AS [IDDM_PhongBan], 
+      [V_HO_SO].[DM_PhongBan] AS [DM_PhongBan], 
+      [V_HO_SO].[UserNameThuLy] AS [UserNameThuLy], 
+      [V_HO_SO].[SoLuongTBTVe] AS [SoLuongTBTVe], 
+      [V_HO_SO].[SoLuongGCNVe] AS [SoLuongGCNVe], 
+      [V_HO_SO].[HoSoRut] AS [HoSoRut], 
+      [V_HO_SO].[NgayTBTVe] AS [NgayTBTVe], 
+      [V_HO_SO].[NgayGCNVe] AS [NgayGCNVe], 
+      [V_HO_SO].[NgayCoGCN] AS [NgayCoGCN], 
+      [V_HO_SO].[CoYCBS] AS [CoYCBS], 
+      [V_HO_SO].[NgayYCBS] AS [NgayYCBS], 
+      [V_HO_SO].[DaBSHS] AS [DaBSHS], 
+      [V_HO_SO].[NgayBSHS] AS [NgayBSHS], 
+      [V_HO_SO].[SoNgayLamCongVan] AS [SoNgayLamCongVan], 
+      [V_HO_SO].[NgayHenTraCongVan] AS [NgayHenTraCongVan], 
+      [V_HO_SO].[CoCongVan] AS [CoCongVan], 
+      [V_HO_SO].[NgayCoCongVan] AS [NgayCoCongVan], 
+      [V_HO_SO].[DaTraCongVan] AS [DaTraCongVan], 
+      [V_HO_SO].[NgayTraCongVan] AS [NgayTraCongVan], 
+      [V_HO_SO].[DaNopHoSoLan2] AS [DaNopHoSoLan2], 
+      [V_HO_SO].[NgayNopHoSoLan2] AS [NgayNopHoSoLan2], 
+      [V_HO_SO].[NgayCoTBT] AS [NgayCoTBT], 
+      [V_HO_SO].[SoLuongHSCon] AS [SoLuongHSCon], 
+      [V_HO_SO].[NhanLuuTru] AS [NhanLuuTru], 
+      [V_HO_SO].[NgayNhanLuuTru] AS [NgayNhanLuuTru], 
+      [V_HO_SO].[UserNameCreate] AS [UserNameCreate], 
+      [V_HO_SO].[NgayCreate] AS [NgayCreate], 
+      [V_HO_SO].[NQ] AS [NQ], 
+      [V_HO_SO].[MaCuaSoTNMT] AS [MaCuaSoTNMT], 
+      [V_HO_SO].[YKienGiaiQuyet] AS [YKienGiaiQuyet], 
+      [V_HO_SO].[DaBanGiaoHoSo] AS [DaBanGiaoHoSo], 
+      [V_HO_SO].[NgayBanGiao] AS [NgayBanGiao], 
+      [V_HO_SO].[DangChuyenThue] AS [DangChuyenThue], 
+      [V_HO_SO].[NgayChuyenThue] AS [NgayChuyenThue], 
+      [V_HO_SO].[DangTrinhSo] AS [DangTrinhSo], 
+      [V_HO_SO].[NgayTrinhSo] AS [NgayTrinhSo], 
+      [V_HO_SO].[CoPhaiNopThue] AS [CoPhaiNopThue]
+      FROM [dbo].[V_HO_SO] AS [V_HO_SO]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'BK_VPDKDD.dbo.V_HO_SO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="V_HO_SO">
+          <Key>
+            <PropertyRef Name="IDU" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="IDU" Type="bigint" Nullable="false" />
+          <Property Name="ID" Type="bigint" Nullable="false" />
+          <Property Name="IDSoTiepNhan" Type="int" />
+          <Property Name="IDDM_ThuTucHanhChinh" Type="int" />
+          <Property Name="DM_ThuTucHanhChinh" Type="nvarchar" MaxLength="1050" />
+          <Property Name="VeViec" Type="nvarchar" MaxLength="1050" />
+          <Property Name="SoBienNhan" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayNhan" Type="datetime" />
+          <Property Name="SoNgayGiaiQuyet" Type="int" />
+          <Property Name="SoNgayLamThue" Type="int" />
+          <Property Name="NgayHenTraTBT" Type="datetime" />
+          <Property Name="NgayHenTra" Type="datetime" />
+          <Property Name="IDDM_District" Type="nvarchar" MaxLength="50" />
+          <Property Name="DM_District" Type="nvarchar" MaxLength="150" />
+          <Property Name="IDDM_Guild" Type="nvarchar" MaxLength="50" />
+          <Property Name="DM_Guild" Type="nvarchar" MaxLength="150" />
+          <Property Name="DiaChiChiTiet" Type="nvarchar" MaxLength="1050" />
+          <Property Name="TenNguoiNop" Type="nvarchar" MaxLength="1050" />
+          <Property Name="CMTNguoiNop" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiaChiNguoiNop" Type="nvarchar" MaxLength="2050" />
+          <Property Name="DienThoaiNguoiNop" Type="nvarchar" MaxLength="150" />
+          <Property Name="MailNguoiNop" Type="nvarchar" MaxLength="150" />
+          <Property Name="GioiTinhNguoiNop" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDChuSoHuu" Type="int" />
+          <Property Name="TenChuSoHuu" Type="nvarchar" MaxLength="1050" />
+          <Property Name="CMTChuSoHuu" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiaChiChuSoHuu" Type="nvarchar" MaxLength="2050" />
+          <Property Name="DienThoaiChuSoHuu" Type="nvarchar" MaxLength="150" />
+          <Property Name="MailChuSoHuu" Type="nvarchar" MaxLength="150" />
+          <Property Name="GioiTinhChuSoHuu" Type="nvarchar" MaxLength="50" />
+          <Property Name="TenChuBan" Type="nvarchar" MaxLength="1050" />
+          <Property Name="CMTChuBan" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiaChiChuBan" Type="nvarchar" MaxLength="2050" />
+          <Property Name="DienThoaiChuBan" Type="nvarchar" MaxLength="150" />
+          <Property Name="GioiTinhChuBan" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDChuDauTu" Type="int" />
+          <Property Name="TenChuDauTu" Type="nvarchar" MaxLength="1050" />
+          <Property Name="DiaChiChuDauTu" Type="nvarchar" MaxLength="2050" />
+          <Property Name="SoDKKDChuDauTu" Type="nvarchar" MaxLength="150" />
+          <Property Name="DienThoaiChuDauTu" Type="nvarchar" MaxLength="150" />
+          <Property Name="TenDuAn" Type="nvarchar" MaxLength="2050" />
+          <Property Name="IDDuAn" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="3950" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+          <Property Name="CanHoSo" Type="nvarchar" MaxLength="1050" />
+          <Property Name="IDCanHo" Type="int" />
+          <Property Name="IDNha" Type="int" />
+          <Property Name="TenChungCu" Type="nvarchar" MaxLength="1050" />
+          <Property Name="TangSo" Type="nvarchar" MaxLength="1050" />
+          <Property Name="HoSoChuDauTuNop" Type="bit" />
+          <Property Name="IDHoSoChuDauTu" Type="bigint" />
+          <Property Name="SoLuongHoSoNop" Type="int" />
+          <Property Name="SoPhatHanh" Type="nvarchar" MaxLength="1050" />
+          <Property Name="UserNameNhanHoSo" Type="nvarchar" MaxLength="50" />
+          <Property Name="IDTinhTrangHienTai" Type="int" />
+          <Property Name="UserNameHienTai" Type="nvarchar" MaxLength="150" />
+          <Property Name="DM_TinhTrang" Type="nvarchar" MaxLength="1150" />
+          <Property Name="IDDM_TinhTrang" Type="int" />
+          <Property Name="SoPhieuChuyen" Type="nvarchar" MaxLength="3950" />
+          <Property Name="IDDM_ChiNhanh" Type="int" />
+          <Property Name="SoTBT" Type="nvarchar" MaxLength="3950" />
+          <Property Name="DaTraTBT" Type="bit" />
+          <Property Name="NgayTraTBT" Type="nvarchar" MaxLength="1050" />
+          <Property Name="NguoiNhanTBT" Type="nvarchar" MaxLength="1050" />
+          <Property Name="SoLuongHoSoTraTBT" Type="int" />
+          <Property Name="UserNameTraTBT" Type="nvarchar" MaxLength="150" />
+          <Property Name="SoPhatHanhGCN" Type="nvarchar" MaxLength="3050" />
+          <Property Name="NgayPhatHanhGCN" Type="datetime" />
+          <Property Name="MaVach" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoVaoSoCapGCN" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayTraGCN" Type="datetime" />
+          <Property Name="DaTraGCN" Type="bit" />
+          <Property Name="NguoiNhanGCN" Type="nvarchar" MaxLength="1050" />
+          <Property Name="SoLuongGCNTra" Type="int" />
+          <Property Name="UserNameTraGCN" Type="nvarchar" MaxLength="150" />
+          <Property Name="GhiChuTraKetQua" Type="nvarchar" MaxLength="3050" />
+          <Property Name="NgayTraHoSo" Type="datetime" />
+          <Property Name="DaTraHoSo" Type="bit" />
+          <Property Name="NguoiNhanHoSo" Type="nvarchar" MaxLength="150" />
+          <Property Name="SoLuongHoSoTra" Type="int" />
+          <Property Name="UserNameTraHoSo" Type="nvarchar" MaxLength="50" />
+          <Property Name="DaNopThue" Type="bit" />
+          <Property Name="NgayNhanBienLaiThue" Type="datetime" />
+          <Property Name="DaCoTBT" Type="bit" />
+          <Property Name="DaCoGCN" Type="bit" />
+          <Property Name="IDDM_PhongBan" Type="int" />
+          <Property Name="DM_PhongBan" Type="nvarchar" MaxLength="150" />
+          <Property Name="UserNameThuLy" Type="nvarchar" MaxLength="50" />
+          <Property Name="SoLuongTBTVe" Type="int" />
+          <Property Name="SoLuongGCNVe" Type="int" />
+          <Property Name="HoSoRut" Type="bit" />
+          <Property Name="NgayTBTVe" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayGCNVe" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayCoGCN" Type="datetime" />
+          <Property Name="CoYCBS" Type="bit" />
+          <Property Name="NgayYCBS" Type="datetime" />
+          <Property Name="DaBSHS" Type="bit" />
+          <Property Name="NgayBSHS" Type="datetime" />
+          <Property Name="SoNgayLamCongVan" Type="int" />
+          <Property Name="NgayHenTraCongVan" Type="datetime" />
+          <Property Name="CoCongVan" Type="bit" />
+          <Property Name="NgayCoCongVan" Type="datetime" />
+          <Property Name="DaTraCongVan" Type="bit" />
+          <Property Name="NgayTraCongVan" Type="datetime" />
+          <Property Name="DaNopHoSoLan2" Type="bit" />
+          <Property Name="NgayNopHoSoLan2" Type="datetime" />
+          <Property Name="NgayCoTBT" Type="datetime" />
+          <Property Name="SoLuongHSCon" Type="int" />
+          <Property Name="NhanLuuTru" Type="bit" />
+          <Property Name="NgayNhanLuuTru" Type="datetime" />
+          <Property Name="UserNameCreate" Type="nvarchar" MaxLength="50" />
+          <Property Name="NgayCreate" Type="datetime" />
+          <Property Name="NQ" Type="nvarchar" MaxLength="200" />
+          <Property Name="MaCuaSoTNMT" Type="nvarchar" MaxLength="50" />
+          <Property Name="YKienGiaiQuyet" Type="nvarchar" MaxLength="3990" />
+          <Property Name="DaBanGiaoHoSo" Type="bit" />
+          <Property Name="NgayBanGiao" Type="datetime" />
+          <Property Name="DangChuyenThue" Type="bit" />
+          <Property Name="NgayChuyenThue" Type="datetime" />
+          <Property Name="DangTrinhSo" Type="bit" />
+          <Property Name="NgayTrinhSo" Type="datetime" />
+          <Property Name="CoPhaiNopThue" Type="bit" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BK_VPDKDDModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BK_HSVPDKDDEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="V_HO_SO" EntityType="BK_VPDKDDModel.V_HO_SO" />
+        </EntityContainer>
+        <EntityType Name="V_HO_SO">
+          <Key>
+            <PropertyRef Name="IDU" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int64" Name="IDU" Nullable="false" />
+          <Property Type="Int64" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="IDSoTiepNhan" />
+          <Property Type="Int32" Name="IDDM_ThuTucHanhChinh" />
+          <Property Type="String" Name="DM_ThuTucHanhChinh" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="VeViec" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SoBienNhan" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NgayNhan" Precision="3" />
+          <Property Type="Int32" Name="SoNgayGiaiQuyet" />
+          <Property Type="Int32" Name="SoNgayLamThue" />
+          <Property Type="DateTime" Name="NgayHenTraTBT" Precision="3" />
+          <Property Type="DateTime" Name="NgayHenTra" Precision="3" />
+          <Property Type="String" Name="IDDM_District" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DM_District" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IDDM_Guild" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DM_Guild" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DiaChiChiTiet" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TenNguoiNop" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CMTNguoiNop" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DiaChiNguoiNop" MaxLength="2050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DienThoaiNguoiNop" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MailNguoiNop" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GioiTinhNguoiNop" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="IDChuSoHuu" />
+          <Property Type="String" Name="TenChuSoHuu" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CMTChuSoHuu" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DiaChiChuSoHuu" MaxLength="2050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DienThoaiChuSoHuu" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MailChuSoHuu" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GioiTinhChuSoHuu" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TenChuBan" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CMTChuBan" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DiaChiChuBan" MaxLength="2050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DienThoaiChuBan" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GioiTinhChuBan" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="IDChuDauTu" />
+          <Property Type="String" Name="TenChuDauTu" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DiaChiChuDauTu" MaxLength="2050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SoDKKDChuDauTu" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DienThoaiChuDauTu" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TenDuAn" MaxLength="2050" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="IDDuAn" />
+          <Property Type="String" Name="GhiChu" MaxLength="3950" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserName" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="CanHoSo" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="IDCanHo" />
+          <Property Type="Int32" Name="IDNha" />
+          <Property Type="String" Name="TenChungCu" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TangSo" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="HoSoChuDauTuNop" />
+          <Property Type="Int64" Name="IDHoSoChuDauTu" />
+          <Property Type="Int32" Name="SoLuongHoSoNop" />
+          <Property Type="String" Name="SoPhatHanh" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserNameNhanHoSo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="IDTinhTrangHienTai" />
+          <Property Type="String" Name="UserNameHienTai" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DM_TinhTrang" MaxLength="1150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="IDDM_TinhTrang" />
+          <Property Type="String" Name="SoPhieuChuyen" MaxLength="3950" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="IDDM_ChiNhanh" />
+          <Property Type="String" Name="SoTBT" MaxLength="3950" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="DaTraTBT" />
+          <Property Type="String" Name="NgayTraTBT" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NguoiNhanTBT" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SoLuongHoSoTraTBT" />
+          <Property Type="String" Name="UserNameTraTBT" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SoPhatHanhGCN" MaxLength="3050" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NgayPhatHanhGCN" Precision="3" />
+          <Property Type="String" Name="MaVach" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SoVaoSoCapGCN" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NgayTraGCN" Precision="3" />
+          <Property Type="Boolean" Name="DaTraGCN" />
+          <Property Type="String" Name="NguoiNhanGCN" MaxLength="1050" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SoLuongGCNTra" />
+          <Property Type="String" Name="UserNameTraGCN" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GhiChuTraKetQua" MaxLength="3050" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NgayTraHoSo" Precision="3" />
+          <Property Type="Boolean" Name="DaTraHoSo" />
+          <Property Type="String" Name="NguoiNhanHoSo" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SoLuongHoSoTra" />
+          <Property Type="String" Name="UserNameTraHoSo" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="DaNopThue" />
+          <Property Type="DateTime" Name="NgayNhanBienLaiThue" Precision="3" />
+          <Property Type="Boolean" Name="DaCoTBT" />
+          <Property Type="Boolean" Name="DaCoGCN" />
+          <Property Type="Int32" Name="IDDM_PhongBan" />
+          <Property Type="String" Name="DM_PhongBan" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserNameThuLy" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SoLuongTBTVe" />
+          <Property Type="Int32" Name="SoLuongGCNVe" />
+          <Property Type="Boolean" Name="HoSoRut" />
+          <Property Type="String" Name="NgayTBTVe" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="NgayGCNVe" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NgayCoGCN" Precision="3" />
+          <Property Type="Boolean" Name="CoYCBS" />
+          <Property Type="DateTime" Name="NgayYCBS" Precision="3" />
+          <Property Type="Boolean" Name="DaBSHS" />
+          <Property Type="DateTime" Name="NgayBSHS" Precision="3" />
+          <Property Type="Int32" Name="SoNgayLamCongVan" />
+          <Property Type="DateTime" Name="NgayHenTraCongVan" Precision="3" />
+          <Property Type="Boolean" Name="CoCongVan" />
+          <Property Type="DateTime" Name="NgayCoCongVan" Precision="3" />
+          <Property Type="Boolean" Name="DaTraCongVan" />
+          <Property Type="DateTime" Name="NgayTraCongVan" Precision="3" />
+          <Property Type="Boolean" Name="DaNopHoSoLan2" />
+          <Property Type="DateTime" Name="NgayNopHoSoLan2" Precision="3" />
+          <Property Type="DateTime" Name="NgayCoTBT" Precision="3" />
+          <Property Type="Int32" Name="SoLuongHSCon" />
+          <Property Type="Boolean" Name="NhanLuuTru" />
+          <Property Type="DateTime" Name="NgayNhanLuuTru" Precision="3" />
+          <Property Type="String" Name="UserNameCreate" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="NgayCreate" Precision="3" />
+          <Property Type="String" Name="NQ" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MaCuaSoTNMT" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="YKienGiaiQuyet" MaxLength="3990" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="DaBanGiaoHoSo" />
+          <Property Type="DateTime" Name="NgayBanGiao" Precision="3" />
+          <Property Type="Boolean" Name="DangChuyenThue" />
+          <Property Type="DateTime" Name="NgayChuyenThue" Precision="3" />
+          <Property Type="Boolean" Name="DangTrinhSo" />
+          <Property Type="DateTime" Name="NgayTrinhSo" Precision="3" />
+          <Property Type="Boolean" Name="CoPhaiNopThue" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BK_VPDKDDModelStoreContainer" CdmEntityContainer="BK_HSVPDKDDEntities">
+          <EntitySetMapping Name="V_HO_SO">
+            <EntityTypeMapping TypeName="BK_VPDKDDModel.V_HO_SO">
+              <MappingFragment StoreEntitySet="V_HO_SO">
+                <ScalarProperty Name="CoPhaiNopThue" ColumnName="CoPhaiNopThue" />
+                <ScalarProperty Name="NgayTrinhSo" ColumnName="NgayTrinhSo" />
+                <ScalarProperty Name="DangTrinhSo" ColumnName="DangTrinhSo" />
+                <ScalarProperty Name="NgayChuyenThue" ColumnName="NgayChuyenThue" />
+                <ScalarProperty Name="DangChuyenThue" ColumnName="DangChuyenThue" />
+                <ScalarProperty Name="NgayBanGiao" ColumnName="NgayBanGiao" />
+                <ScalarProperty Name="DaBanGiaoHoSo" ColumnName="DaBanGiaoHoSo" />
+                <ScalarProperty Name="YKienGiaiQuyet" ColumnName="YKienGiaiQuyet" />
+                <ScalarProperty Name="MaCuaSoTNMT" ColumnName="MaCuaSoTNMT" />
+                <ScalarProperty Name="NQ" ColumnName="NQ" />
+                <ScalarProperty Name="NgayCreate" ColumnName="NgayCreate" />
+                <ScalarProperty Name="UserNameCreate" ColumnName="UserNameCreate" />
+                <ScalarProperty Name="NgayNhanLuuTru" ColumnName="NgayNhanLuuTru" />
+                <ScalarProperty Name="NhanLuuTru" ColumnName="NhanLuuTru" />
+                <ScalarProperty Name="SoLuongHSCon" ColumnName="SoLuongHSCon" />
+                <ScalarProperty Name="NgayCoTBT" ColumnName="NgayCoTBT" />
+                <ScalarProperty Name="NgayNopHoSoLan2" ColumnName="NgayNopHoSoLan2" />
+                <ScalarProperty Name="DaNopHoSoLan2" ColumnName="DaNopHoSoLan2" />
+                <ScalarProperty Name="NgayTraCongVan" ColumnName="NgayTraCongVan" />
+                <ScalarProperty Name="DaTraCongVan" ColumnName="DaTraCongVan" />
+                <ScalarProperty Name="NgayCoCongVan" ColumnName="NgayCoCongVan" />
+                <ScalarProperty Name="CoCongVan" ColumnName="CoCongVan" />
+                <ScalarProperty Name="NgayHenTraCongVan" ColumnName="NgayHenTraCongVan" />
+                <ScalarProperty Name="SoNgayLamCongVan" ColumnName="SoNgayLamCongVan" />
+                <ScalarProperty Name="NgayBSHS" ColumnName="NgayBSHS" />
+                <ScalarProperty Name="DaBSHS" ColumnName="DaBSHS" />
+                <ScalarProperty Name="NgayYCBS" ColumnName="NgayYCBS" />
+                <ScalarProperty Name="CoYCBS" ColumnName="CoYCBS" />
+                <ScalarProperty Name="NgayCoGCN" ColumnName="NgayCoGCN" />
+                <ScalarProperty Name="NgayGCNVe" ColumnName="NgayGCNVe" />
+                <ScalarProperty Name="NgayTBTVe" ColumnName="NgayTBTVe" />
+                <ScalarProperty Name="HoSoRut" ColumnName="HoSoRut" />
+                <ScalarProperty Name="SoLuongGCNVe" ColumnName="SoLuongGCNVe" />
+                <ScalarProperty Name="SoLuongTBTVe" ColumnName="SoLuongTBTVe" />
+                <ScalarProperty Name="UserNameThuLy" ColumnName="UserNameThuLy" />
+                <ScalarProperty Name="DM_PhongBan" ColumnName="DM_PhongBan" />
+                <ScalarProperty Name="IDDM_PhongBan" ColumnName="IDDM_PhongBan" />
+                <ScalarProperty Name="DaCoGCN" ColumnName="DaCoGCN" />
+                <ScalarProperty Name="DaCoTBT" ColumnName="DaCoTBT" />
+                <ScalarProperty Name="NgayNhanBienLaiThue" ColumnName="NgayNhanBienLaiThue" />
+                <ScalarProperty Name="DaNopThue" ColumnName="DaNopThue" />
+                <ScalarProperty Name="UserNameTraHoSo" ColumnName="UserNameTraHoSo" />
+                <ScalarProperty Name="SoLuongHoSoTra" ColumnName="SoLuongHoSoTra" />
+                <ScalarProperty Name="NguoiNhanHoSo" ColumnName="NguoiNhanHoSo" />
+                <ScalarProperty Name="DaTraHoSo" ColumnName="DaTraHoSo" />
+                <ScalarProperty Name="NgayTraHoSo" ColumnName="NgayTraHoSo" />
+                <ScalarProperty Name="GhiChuTraKetQua" ColumnName="GhiChuTraKetQua" />
+                <ScalarProperty Name="UserNameTraGCN" ColumnName="UserNameTraGCN" />
+                <ScalarProperty Name="SoLuongGCNTra" ColumnName="SoLuongGCNTra" />
+                <ScalarProperty Name="NguoiNhanGCN" ColumnName="NguoiNhanGCN" />
+                <ScalarProperty Name="DaTraGCN" ColumnName="DaTraGCN" />
+                <ScalarProperty Name="NgayTraGCN" ColumnName="NgayTraGCN" />
+                <ScalarProperty Name="SoVaoSoCapGCN" ColumnName="SoVaoSoCapGCN" />
+                <ScalarProperty Name="MaVach" ColumnName="MaVach" />
+                <ScalarProperty Name="NgayPhatHanhGCN" ColumnName="NgayPhatHanhGCN" />
+                <ScalarProperty Name="SoPhatHanhGCN" ColumnName="SoPhatHanhGCN" />
+                <ScalarProperty Name="UserNameTraTBT" ColumnName="UserNameTraTBT" />
+                <ScalarProperty Name="SoLuongHoSoTraTBT" ColumnName="SoLuongHoSoTraTBT" />
+                <ScalarProperty Name="NguoiNhanTBT" ColumnName="NguoiNhanTBT" />
+                <ScalarProperty Name="NgayTraTBT" ColumnName="NgayTraTBT" />
+                <ScalarProperty Name="DaTraTBT" ColumnName="DaTraTBT" />
+                <ScalarProperty Name="SoTBT" ColumnName="SoTBT" />
+                <ScalarProperty Name="IDDM_ChiNhanh" ColumnName="IDDM_ChiNhanh" />
+                <ScalarProperty Name="SoPhieuChuyen" ColumnName="SoPhieuChuyen" />
+                <ScalarProperty Name="IDDM_TinhTrang" ColumnName="IDDM_TinhTrang" />
+                <ScalarProperty Name="DM_TinhTrang" ColumnName="DM_TinhTrang" />
+                <ScalarProperty Name="UserNameHienTai" ColumnName="UserNameHienTai" />
+                <ScalarProperty Name="IDTinhTrangHienTai" ColumnName="IDTinhTrangHienTai" />
+                <ScalarProperty Name="UserNameNhanHoSo" ColumnName="UserNameNhanHoSo" />
+                <ScalarProperty Name="SoPhatHanh" ColumnName="SoPhatHanh" />
+                <ScalarProperty Name="SoLuongHoSoNop" ColumnName="SoLuongHoSoNop" />
+                <ScalarProperty Name="IDHoSoChuDauTu" ColumnName="IDHoSoChuDauTu" />
+                <ScalarProperty Name="HoSoChuDauTuNop" ColumnName="HoSoChuDauTuNop" />
+                <ScalarProperty Name="TangSo" ColumnName="TangSo" />
+                <ScalarProperty Name="TenChungCu" ColumnName="TenChungCu" />
+                <ScalarProperty Name="IDNha" ColumnName="IDNha" />
+                <ScalarProperty Name="IDCanHo" ColumnName="IDCanHo" />
+                <ScalarProperty Name="CanHoSo" ColumnName="CanHoSo" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="IDDuAn" ColumnName="IDDuAn" />
+                <ScalarProperty Name="TenDuAn" ColumnName="TenDuAn" />
+                <ScalarProperty Name="DienThoaiChuDauTu" ColumnName="DienThoaiChuDauTu" />
+                <ScalarProperty Name="SoDKKDChuDauTu" ColumnName="SoDKKDChuDauTu" />
+                <ScalarProperty Name="DiaChiChuDauTu" ColumnName="DiaChiChuDauTu" />
+                <ScalarProperty Name="TenChuDauTu" ColumnName="TenChuDauTu" />
+                <ScalarProperty Name="IDChuDauTu" ColumnName="IDChuDauTu" />
+                <ScalarProperty Name="GioiTinhChuBan" ColumnName="GioiTinhChuBan" />
+                <ScalarProperty Name="DienThoaiChuBan" ColumnName="DienThoaiChuBan" />
+                <ScalarProperty Name="DiaChiChuBan" ColumnName="DiaChiChuBan" />
+                <ScalarProperty Name="CMTChuBan" ColumnName="CMTChuBan" />
+                <ScalarProperty Name="TenChuBan" ColumnName="TenChuBan" />
+                <ScalarProperty Name="GioiTinhChuSoHuu" ColumnName="GioiTinhChuSoHuu" />
+                <ScalarProperty Name="MailChuSoHuu" ColumnName="MailChuSoHuu" />
+                <ScalarProperty Name="DienThoaiChuSoHuu" ColumnName="DienThoaiChuSoHuu" />
+                <ScalarProperty Name="DiaChiChuSoHuu" ColumnName="DiaChiChuSoHuu" />
+                <ScalarProperty Name="CMTChuSoHuu" ColumnName="CMTChuSoHuu" />
+                <ScalarProperty Name="TenChuSoHuu" ColumnName="TenChuSoHuu" />
+                <ScalarProperty Name="IDChuSoHuu" ColumnName="IDChuSoHuu" />
+                <ScalarProperty Name="GioiTinhNguoiNop" ColumnName="GioiTinhNguoiNop" />
+                <ScalarProperty Name="MailNguoiNop" ColumnName="MailNguoiNop" />
+                <ScalarProperty Name="DienThoaiNguoiNop" ColumnName="DienThoaiNguoiNop" />
+                <ScalarProperty Name="DiaChiNguoiNop" ColumnName="DiaChiNguoiNop" />
+                <ScalarProperty Name="CMTNguoiNop" ColumnName="CMTNguoiNop" />
+                <ScalarProperty Name="TenNguoiNop" ColumnName="TenNguoiNop" />
+                <ScalarProperty Name="DiaChiChiTiet" ColumnName="DiaChiChiTiet" />
+                <ScalarProperty Name="DM_Guild" ColumnName="DM_Guild" />
+                <ScalarProperty Name="IDDM_Guild" ColumnName="IDDM_Guild" />
+                <ScalarProperty Name="DM_District" ColumnName="DM_District" />
+                <ScalarProperty Name="IDDM_District" ColumnName="IDDM_District" />
+                <ScalarProperty Name="NgayHenTra" ColumnName="NgayHenTra" />
+                <ScalarProperty Name="NgayHenTraTBT" ColumnName="NgayHenTraTBT" />
+                <ScalarProperty Name="SoNgayLamThue" ColumnName="SoNgayLamThue" />
+                <ScalarProperty Name="SoNgayGiaiQuyet" ColumnName="SoNgayGiaiQuyet" />
+                <ScalarProperty Name="NgayNhan" ColumnName="NgayNhan" />
+                <ScalarProperty Name="SoBienNhan" ColumnName="SoBienNhan" />
+                <ScalarProperty Name="VeViec" ColumnName="VeViec" />
+                <ScalarProperty Name="DM_ThuTucHanhChinh" ColumnName="DM_ThuTucHanhChinh" />
+                <ScalarProperty Name="IDDM_ThuTucHanhChinh" ColumnName="IDDM_ThuTucHanhChinh" />
+                <ScalarProperty Name="IDSoTiepNhan" ColumnName="IDSoTiepNhan" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="IDU" ColumnName="IDU" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

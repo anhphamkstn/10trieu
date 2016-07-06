@@ -1,6 +1,6 @@
 ﻿.maincontent{   
     background: #fff none repeat scroll 0 0;
-    padding: 20px 5%;overflow-y: hidden !important;
+    padding: 20px 0px;overflow-y: hidden !important;
 }
 
 .left{
@@ -16,6 +16,7 @@
 
 .ldan{
     position: relative;
+    padding-left:100px;
 
 }
 
@@ -120,15 +121,21 @@ text-transform: uppercase;
 .info p,.info span, .info a, .info li, .info td, .info div{font-size: 1em !important;}
 
 .dxtvControl .dxtv-ndTxt {
-    width:400px;
+    width:550px;
     white-space:normal !important;
     line-height:20px;
     text-align:justify;
 }
 
-#ContentPlaceHolder1_ASPxTreeView1_CD {
-    width:550px;
-    max-height:500px;
+#ASPxTreeView1 {
+    width:100% !important;
+    max-height:700px;
     overflow-y:scroll;
-    height:500px;
+    height:700px;
+}
+
+.info {
+    max-height:700px;
+    overflow-y:scroll;
+    height:700px;
 }

@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace BK_VPDKDatDai
 {
-    public partial class F200_TraCuuThuTuc : System.Web.UI.Page
+    public partial class F400_TraCuuLuat : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,8 +26,8 @@ namespace BK_VPDKDatDai
         protected void ASPxTreeView1_Load(object sender, EventArgs e)
         {
             QUAN_LY_DAT_DAIEntities v_ett = new QUAN_LY_DAT_DAIEntities();
-            var v_lst_root = v_ett.DM_TIEU_DE.Where(x=>x.ID_CHA == null).OrderBy(x => x.THU_TU_HIEN_THI).ToList();
-            var v_lst = v_ett.DM_TIEU_DE.ToList();
+            var v_lst_root = v_ett.DM_LUAT.Where(x=>x.ID_CHA == null).OrderBy(x => x.THU_TU_HIEN_THI).ToList();
+            var v_lst = v_ett.DM_LUAT.ToList();
             foreach (var item in v_lst_root)
             {
                 TreeViewNode v_node = new TreeViewNode(item.TIEU_DE, item.ID.ToString(), "", "#" + item.ID);
@@ -39,7 +39,7 @@ namespace BK_VPDKDatDai
             ASPxTreeView1.ShowTreeLines = false;
         }
 
-        private void createTree(TreeViewNode v_node, DM_TIEU_DE item, List<DM_TIEU_DE> ip_lst_node)
+        private void createTree(TreeViewNode v_node, DM_LUAT item, List<DM_LUAT> ip_lst_node)
         {
             while (getCountNodeChild(item) > 0 && v_node.Nodes.Count != getCountNodeChild(item))
             {
@@ -54,10 +54,10 @@ namespace BK_VPDKDatDai
             }
         }
 
-        private int getCountNodeChild(DM_TIEU_DE item)
+        private int getCountNodeChild(DM_LUAT item)
         {
             QUAN_LY_DAT_DAIEntities v_ett = new QUAN_LY_DAT_DAIEntities();
-            return v_ett.DM_TIEU_DE.Where(x => x.ID_CHA == item.ID).ToList().Count;
+            return v_ett.DM_LUAT.Where(x => x.ID_CHA == item.ID).ToList().Count;
         }
     }
 }
